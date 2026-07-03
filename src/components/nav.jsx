@@ -6,7 +6,7 @@ function Nav () {
         <nav className='flex p-7'>
             
             <div className='w-[80vw] mx-auto flex justify-between align-middle items-center'>
-                <ul className='flex gap-5'>
+                <ul className='md:flex gap-5 hidden'>
                     <img src={Logo} alt="" />
                     <li><a className='text-[#79787B] font-bold hover:text-black' href="">Features</a></li>
                     <li><a className='text-[#79787B] font-bold hover:text-black' href="">Pricing</a></li>

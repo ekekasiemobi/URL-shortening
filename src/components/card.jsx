@@ -4,7 +4,7 @@ function Card(props) {
   return (
     <>
         <main >
-            <div className='bg-white w-[25vw] h-56 p-7 rounded-lg flex gap-5 flex-col'>
+            <div className='bg-white md:max-w-[25vw] max-w-[90vw] h-56 p-7 rounded-lg flex gap-5 flex-col'>
                 <div className="-mt-13">
                     <img className="bg-[#4B3F6B] p-4 rounded-full w-15" src={props.image} alt="" />
                 </div>

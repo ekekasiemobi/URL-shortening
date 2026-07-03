@@ -8,7 +8,7 @@ function Footer() {
   return (
     <>
         <footer className='pt-15 pb-15 bg-[#242028]'>
-            <div className='text-white flex w-full md:w-[80vw] mx-auto justify-between items-start'>
+            <div className='text-white flex flex-col md:flex-row w-full max-w-[80vw] mx-auto justify-center items-center text-center'>
 
                 <img className='footerImage' src={Logo} alt="" />
 
@@ -35,7 +35,7 @@ function Footer() {
                     
                 </ul>
 
-                <div className='flex gap-7'>
+                <div className='flex flex-col gap-7'>
                     <img className='w-4 h-4 social-icon' src={FaceBook} alt="" />
                     <img className='w-4 h-4 social-icon' src={Twitter} alt="" />
                     <img className='w-4 h-4 social-icon' src={Pintrest} alt="" />
