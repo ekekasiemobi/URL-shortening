@@ -15,10 +15,10 @@ function Home() {
                         <img src={HeroImage} alt="" />
                     </div>
                     <div className='md:w-[50%] flex flex-col gap-3 justify-center items-center text-center'>
-                        <h1 className='md:text-6xl text-3xl text-[#34313C] font-bold poppins flex justify-center items-center '>More than just shorter links</h1>
-                        <p className='text-[#79787B] text-sm md:max-w-80'>Build your brand's recorgnition and get detailed insights on how your links are performing</p>
+                        <h1 className='md:text-6xl text-4xl text-[#34313C] font-bold poppins flex justify-center items-center '>More than just shorter links</h1>
+                        <p className='text-[#79787B] md:text-sm md:max-w-80 max-w-65'>Build your brand's recorgnition and get detailed insights on how your links are performing</p>
                         <p></p>
-                        <button className='bg-[#2AD2D5] px-5 py-1 rounded-3xl text-white text-sm flex justify-center align-middle w-fit hover:bg-[#9CE2E2] cursor-pointer items-center'>Get Started</button>
+                        <button className='bg-[#2AD2D5] md:px-5 px-12 md:py-1 py-3.5 rounded-3xl text-white md:text-sm text-1xl flex justify-center align-middle w-fit hover:bg-[#9CE2E2] cursor-pointer items-center'>Get Started</button>
                     </div>
 
                     <div className='md:w-[50%] md:block hidden'>
@@ -29,7 +29,7 @@ function Home() {
             </div>
 
 
-            <div className='bg-[#F0F1F6] md:h-150 h-300 mt-20'>
+            <div className='bg-[#F0F1F6] md:h-150 h-310 md:mt-20 mt-28'>
                 <div className='w-full md:max-w-[80vw] max-w-[90vw] mx-auto relative'>
 
                     <div className='absolute bg-[#3A3154] md:h-25 h-40 -top-11 w-full short py-7 md:px-15 px-5 rounded-2xl'>
@@ -40,12 +40,12 @@ function Home() {
 
                     </div>
 
-                    <div className='w-full text-center pt-32 flex flex-col items-center justify-center gap-5'>
+                    <div className='w-full text-center md:pt-32 pt-40 flex flex-col items-center justify-center gap-5'>
                         <h1 className='text-4xl text-[#34313C] font-bold poppins'>Advanced Statistics</h1>
                         <p className='max-w-md text-[#79787B]'>Track how your links are performing accross the web with our advanced statistics dashboard</p>
                     </div>
 
-                    <div className='flex flex-col md:flex-row gap-7 pt-15'>
+                    <div className='flex flex-col md:flex-row md:gap-7 gap-15 pt-15'>
                         <Card image={Icon1} title="Brand Recognition" description="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."/>
                         <Card image={Icon2} title="Detailed Records" description="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."/>
                         <Card image={Icon3} title="Fully Customizable" description="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."/>
@@ -59,7 +59,7 @@ function Home() {
 
             <div className='bg-[#3A3154] h-75 link flex flex-col justify-center items-center gap-7 text-center'>
                 <h1 className='text-5xl text-white font-bold'>Boost your links today</h1>
-                 <button className='bg-[#2AD2D5] px-6 py-2 rounded-3xl text-white text-sm w-fit hover:bg-[#9CE2E2] cursor-pointer'>Get Started</button>
+                <button className='bg-[#2AD2D5] md:px-5 px-12 md:py-1 py-3.5 rounded-3xl text-white md:text-sm text-1xl flex justify-center align-middle w-fit hover:bg-[#9CE2E2] cursor-pointer items-center'>Get Started</button>
             </div>
            
         </main>
