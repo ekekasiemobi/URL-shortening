@@ -18,17 +18,17 @@ function Nav () {
             <div className='w-[80vw] mx-auto flex justify-between align-middle items-center relative'>
                 <ul className='flex gap-5'>
                     <img src={Logo} alt="" />
-                    <li><Link className='text-[#79787B] font-bold hover:text-black hidden' to="">Features</Link></li>
-                    <li><Link className='text-[#79787B] font-bold hover:text-black hidden' to="">Pricing</Link></li>
-                    <li><Link className='text-[#79787B] font-bold hover:text-black hidden' a="">Resources</Link></li>
+                    <li><Link className='text-[#79787B] font-bold hover:text-black hidden md:block' to="">Features</Link></li>
+                    <li><Link className='text-[#79787B] font-bold hover:text-black hidden md:block' to="">Pricing</Link></li>
+                    <li><Link className='text-[#79787B] font-bold hover:text-black hidden md:block' to="">Resources</Link></li>
                 </ul>
 
                 <ul className='md:flex gap-5 align-middle items-center hidden'>
-                    <li><a className='text-[#79787B] font-bold hover:text-black' href="">Login</a></li>
+                    <li><Link className='text-[#79787B] font-bold hover:text-black' to="">Login</Link></li>
                     <button className='bg-[#2AD2D5] hover:bg-[#9CE2E2] cursor-pointer px-4 py-1 rounded-3xl text-white text-sm'>Sign Up</button>
                 </ul>
 
-                {isOpen ? <button onClick = {toggleMenu}><FaTimes /></button> : <button onClick={toggleMenu}><FaBars /></button>}
+                {isOpen ? <button onClick = {toggleMenu}><FaTimes /></button> : <button className='md:hidden' onClick={toggleMenu}><FaBars /></button>}
 
                 {isOpen && 
                 
@@ -38,13 +38,13 @@ function Nav () {
 
                         <ul className='flex flex-col gap-5'>
                     
-                            <li><a className='text-white font-bold hover:text-black' onClick={toggleMenu} href="">Features</a></li>
-                            <li><a className='text-white font-bold hover:text-black' onClick={toggleMenu} href="">Pricing</a></li>
-                            <li><a className='text-white font-bold hover:text-black' onClick={toggleMenu} href="">Resources</a></li>
+                            <li><Link className='text-white font-bold hover:text-black' onClick={toggleMenu} to="">Features</Link></li>
+                            <li><Link className='text-white font-bold hover:text-black' onClick={toggleMenu} to="">Pricing</Link></li>
+                            <li><Link className='text-white font-bold hover:text-black' onClick={toggleMenu} to="">Resources</Link></li>
                         </ul>
 
                         <ul className='flex flex-col gap-5 align-middle items-center'>
-                            <li><a className='text-white font-bold hover:text-black'onClick={toggleMenu} href="">Login</a></li>
+                            <li><Link className='text-white font-bold hover:text-black'onClick={toggleMenu} to="">Login</Link></li>
 
                             <button className='bg-[#2AD2D5] md:px-5 px-20 md:py-1 py-3 rounded-3xl text-white md:text-sm text-1xl flex justify-center align-middle w-fit hover:bg-[#9CE2E2] cursor-pointer items-center font-bold'onClick={toggleMenu} >Sign Up</button>
                         </ul>

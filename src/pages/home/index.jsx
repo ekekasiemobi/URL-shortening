@@ -3,22 +3,28 @@ import Card from '../../components/card'
 import Icon1 from '../../assets/icon-brand-recognition.svg'
 import Icon2 from '../../assets/icon-detailed-records.svg'
 import Icon3 from '../../assets/icon-fully-customizable.svg'
+import Nav from '../../components/nav'
+import Footer from '../../components/footer'
 
 function Home() {
   return (
     <>
+        <Nav />
+
         <main>
+          
+
             <div className=' w-full md:max-w-[80vw] max-w-[90vw] mx-auto mt-10'>
                 <div className='flex flex-col md:flex-row justify-center align-middle items-center gap-15 '> 
 
                     <div className='md:hidden'>
                         <img src={HeroImage} alt="" />
                     </div>
-                    <div className='md:w-[50%] flex flex-col gap-3 justify-center items-center text-center'>
-                        <h1 className='md:text-6xl text-4xl text-[#34313C] font-bold poppins flex justify-center items-center '>More than just shorter links</h1>
+                    <div className='md:w-[50%] flex flex-col gap-3 justify-center md:justify-start items-center md:items-start text-center md:text-left'>
+                        <h1 className='lg:text-6xl text-4xl text-[#34313C] font-bold poppins flex justify-center items-center '>More than just shorter links</h1>
                         <p className='text-[#79787B] md:text-sm md:max-w-80 max-w-65'>Build your brand's recorgnition and get detailed insights on how your links are performing</p>
                         <p></p>
-                        <button className='bg-[#2AD2D5] md:px-5 px-12 md:py-1 py-3.5 rounded-3xl text-white md:text-sm text-1xl flex justify-center align-middle w-fit hover:bg-[#9CE2E2] cursor-pointer items-center'>Get Started</button>
+                        <button className='bg-[#2AD2D5] md:px-5 px-12 md:py-1 py-3.5 rounded-3xl text-white md:text-sm text-1xl w-fit hover:bg-[#9CE2E2] cursor-pointer'>Get Started</button>
                     </div>
 
                     <div className='md:w-[50%] md:block hidden'>
@@ -63,6 +69,8 @@ function Home() {
             </div>
            
         </main>
+
+        <Footer/>
     
     </>
   )
